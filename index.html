@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CADASTRO DE IMÓVEIS PARA VENDA/ALUGEL</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferências</legend>
+        
+        <label for="gender-male">
+          <input type="radio" id="gender-male" name="gender" value="male">
+          Masculino
+        </label>
+        
+        <label for="gender-female">
+          <input type="radio" id="gender-female" name="gender" value="female">
+          Feminino
+        </label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Dados do Imovel</legend>
+        
+        <label for="tipo-venda">Tipo:</label>
+        <select id="tipo-venda" name="tipo-venda">
+          <option value="venda">Venda</option>
+          <option value="aluguel">Aluguel</option>
+        </select>
+        
+        <br /><label  for="gender-male">
+          <input type="radio" id="apto" name="apto" value="apto">
+          Apartamento
+        </label>
+        
+        <label for="gender-female">
+          <input type="radio" id="casa" name="casa" value="casa">
+          Casa
+        </label>
+        
+        <label for="gender-female">
+          <input type="radio" id="terreno" name="terreno" value="terreno">
+          Terreno
+        </label>
+        <br /><label for="name" <br />Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required placeholder="Digite o endereço">
+
+        <label for="country">País:</label>
+        <select id="country" name="country">
+          <option value="brasil">Brasil</option>
+          <option value="portugal">Portugal</option>
+        </select>
+    </fieldset>
+        
+    <fieldset>
+        <legend>Informações dos valores</legend>
+        
+        <label for="name">Valor Avaliação:</label>
+        <input type="number" id="valor-aval" name="valor-aval" required placeholder="Digite o valor">
+        
+        <label for="name">Valor Venda:</label>
+        <input type="number" id="valor-venda" name="valor-venda" required placeholder="Digite o valor">
+    </fieldset>
+    
+    <em>Caso desistir desta autorização, por qualquer razão, comprometo-me
+            avisar, bem como autorizo a Vinicius Matos Imobiliária a oferecer o referido imóvel,
+            através de anúncios em Jornais ou placa/faixa, afixadas no imóvel, conforme prevê
+            o Art. 20 da Lei 6.530/7.
+        </em>
+    <br />
+ 
+   <br /><button type="submit">Enviar</button>
+</form>
+</body>
+</html>
